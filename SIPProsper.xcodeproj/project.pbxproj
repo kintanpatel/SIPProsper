@@ -7,18 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99B54C7278DD329CC985D56E /* Pods_SIPProsper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2725EBB309C477403E8BAD1 /* Pods_SIPProsper.framework */; };
 		AC166E322BFEE5D700700EE4 /* SIPProsperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E312BFEE5D700700EE4 /* SIPProsperApp.swift */; };
 		AC166E342BFEE5D700700EE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E332BFEE5D700700EE4 /* ContentView.swift */; };
 		AC166E362BFEE5D900700EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC166E352BFEE5D900700EE4 /* Assets.xcassets */; };
 		AC166E392BFEE5D900700EE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC166E382BFEE5D900700EE4 /* Preview Assets.xcassets */; };
+		AC166E412BFEE62700700EE4 /* SIPCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E402BFEE62700700EE4 /* SIPCalculatorView.swift */; };
+		AC166E442BFEE64D00700EE4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E432BFEE64D00700EE4 /* LoadingView.swift */; };
+		AC166E472BFEE66D00700EE4 /* InvestmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E462BFEE66D00700EE4 /* InvestmentData.swift */; };
+		AC166E4A2BFEE68D00700EE4 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E492BFEE68D00700EE4 /* BarView.swift */; };
+		AC166E4C2BFEE6AA00700EE4 /* InvestmentChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E4B2BFEE6AA00700EE4 /* InvestmentChartView.swift */; };
+		AC166E4E2BFEE96700700EE4 /* HowSIPWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E4D2BFEE96700700EE4 /* HowSIPWorkView.swift */; };
+		AC166E512BFEEA5B00700EE4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E502BFEEA5B00700EE4 /* HomeView.swift */; };
+		AC166E532BFEEAB500700EE4 /* LumpSumCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E522BFEEAB500700EE4 /* LumpSumCalculatorView.swift */; };
+		AC166E562BFEEC2C00700EE4 /* LumpSumResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E552BFEEC2C00700EE4 /* LumpSumResultView.swift */; };
+		AC166E592BFEEC9300700EE4 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E582BFEEC9300700EE4 /* PieSlice.swift */; };
+		AC166E5B2BFEECA400700EE4 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E5A2BFEECA400700EE4 /* PieChartView.swift */; };
+		AC166E5F2BFEF1B800700EE4 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E5E2BFEF1B800700EE4 /* AppTheme.swift */; };
+		AC166E622BFEF1D600700EE4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E612BFEF1D600700EE4 /* SettingsView.swift */; };
+		AC166E642BFEF2F000700EE4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E632BFEF2F000700EE4 /* ImagePickerView.swift */; };
+		AC166E672BFF026300700EE4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E662BFF026300700EE4 /* WelcomeView.swift */; };
+		AC166E6A2BFF057900700EE4 /* App+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E692BFF057900700EE4 /* App+Ext.swift */; };
+		AC166E6C2BFF095300700EE4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07A104A7D69D4A6642D0EA3B /* Pods-SIPProsper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPProsper.debug.xcconfig"; path = "Target Support Files/Pods-SIPProsper/Pods-SIPProsper.debug.xcconfig"; sourceTree = "<group>"; };
 		AC166E2E2BFEE5D700700EE4 /* SIPProsper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPProsper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC166E312BFEE5D700700EE4 /* SIPProsperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPProsperApp.swift; sourceTree = "<group>"; };
 		AC166E332BFEE5D700700EE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC166E352BFEE5D900700EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC166E382BFEE5D900700EE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC166E402BFEE62700700EE4 /* SIPCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPCalculatorView.swift; sourceTree = "<group>"; };
+		AC166E432BFEE64D00700EE4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AC166E462BFEE66D00700EE4 /* InvestmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentData.swift; sourceTree = "<group>"; };
+		AC166E492BFEE68D00700EE4 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		AC166E4B2BFEE6AA00700EE4 /* InvestmentChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentChartView.swift; sourceTree = "<group>"; };
+		AC166E4D2BFEE96700700EE4 /* HowSIPWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowSIPWorkView.swift; sourceTree = "<group>"; };
+		AC166E502BFEEA5B00700EE4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC166E522BFEEAB500700EE4 /* LumpSumCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumpSumCalculatorView.swift; sourceTree = "<group>"; };
+		AC166E552BFEEC2C00700EE4 /* LumpSumResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumpSumResultView.swift; sourceTree = "<group>"; };
+		AC166E582BFEEC9300700EE4 /* PieSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		AC166E5A2BFEECA400700EE4 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		AC166E5E2BFEF1B800700EE4 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		AC166E612BFEF1D600700EE4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC166E632BFEF2F000700EE4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		AC166E662BFF026300700EE4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		AC166E692BFF057900700EE4 /* App+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Ext.swift"; sourceTree = "<group>"; };
+		AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Ext/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CFBF37F48EF9015D41A4DE63 /* Pods-SIPProsper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPProsper.release.xcconfig"; path = "Target Support Files/Pods-SIPProsper/Pods-SIPProsper.release.xcconfig"; sourceTree = "<group>"; };
+		E2725EBB309C477403E8BAD1 /* Pods_SIPProsper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIPProsper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +64,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B54C7278DD329CC985D56E /* Pods_SIPProsper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FE7377DCE00EF16DF3F07E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A104A7D69D4A6642D0EA3B /* Pods-SIPProsper.debug.xcconfig */,
+				CFBF37F48EF9015D41A4DE63 /* Pods-SIPProsper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46E7D7B90F4C8AB03567278D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2725EBB309C477403E8BAD1 /* Pods_SIPProsper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC166E252BFEE5D700700EE4 = {
 			isa = PBXGroup;
 			children = (
 				AC166E302BFEE5D700700EE4 /* SIPProsper */,
 				AC166E2F2BFEE5D700700EE4 /* Products */,
+				3FE7377DCE00EF16DF3F07E2 /* Pods */,
+				46E7D7B90F4C8AB03567278D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +109,12 @@
 		AC166E302BFEE5D700700EE4 /* SIPProsper */ = {
 			isa = PBXGroup;
 			children = (
+				AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */,
+				AC166E682BFF057000700EE4 /* Ext */,
+				AC166E5D2BFEF1B000700EE4 /* Enum */,
+				AC166E452BFEE66300700EE4 /* Model */,
+				AC166E422BFEE63D00700EE4 /* HelperView */,
+				AC166E3F2BFEE60A00700EE4 /* Screens */,
 				AC166E312BFEE5D700700EE4 /* SIPProsperApp.swift */,
 				AC166E332BFEE5D700700EE4 /* ContentView.swift */,
 				AC166E352BFEE5D900700EE4 /* Assets.xcassets */,
@@ -67,6 +131,113 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AC166E3F2BFEE60A00700EE4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E652BFF024E00700EE4 /* Welcome */,
+				AC166E602BFEF1C800700EE4 /* Setting */,
+				AC166E4F2BFEEA5300700EE4 /* Home */,
+				AC166E482BFEE68000700EE4 /* SIP */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AC166E422BFEE63D00700EE4 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E5C2BFEEDE200700EE4 /* BarChart */,
+				AC166E572BFEEC8D00700EE4 /* PieChart */,
+				AC166E432BFEE64D00700EE4 /* LoadingView.swift */,
+				AC166E632BFEF2F000700EE4 /* ImagePickerView.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		AC166E452BFEE66300700EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E462BFEE66D00700EE4 /* InvestmentData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC166E482BFEE68000700EE4 /* SIP */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E542BFEEC1F00700EE4 /* Lumsum */,
+				AC166E402BFEE62700700EE4 /* SIPCalculatorView.swift */,
+				AC166E4B2BFEE6AA00700EE4 /* InvestmentChartView.swift */,
+				AC166E4D2BFEE96700700EE4 /* HowSIPWorkView.swift */,
+			);
+			path = SIP;
+			sourceTree = "<group>";
+		};
+		AC166E4F2BFEEA5300700EE4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E502BFEEA5B00700EE4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC166E542BFEEC1F00700EE4 /* Lumsum */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E522BFEEAB500700EE4 /* LumpSumCalculatorView.swift */,
+				AC166E552BFEEC2C00700EE4 /* LumpSumResultView.swift */,
+			);
+			path = Lumsum;
+			sourceTree = "<group>";
+		};
+		AC166E572BFEEC8D00700EE4 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E582BFEEC9300700EE4 /* PieSlice.swift */,
+				AC166E5A2BFEECA400700EE4 /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		AC166E5C2BFEEDE200700EE4 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E492BFEE68D00700EE4 /* BarView.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		AC166E5D2BFEF1B000700EE4 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E5E2BFEF1B800700EE4 /* AppTheme.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		AC166E602BFEF1C800700EE4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E612BFEF1D600700EE4 /* SettingsView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		AC166E652BFF024E00700EE4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E662BFF026300700EE4 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		AC166E682BFF057000700EE4 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				AC166E692BFF057900700EE4 /* App+Ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC166E3C2BFEE5D900700EE4 /* Build configuration list for PBXNativeTarget "SIPProsper" */;
 			buildPhases = (
+				CFBBC71E39E3CC83A2418029 /* [CP] Check Pods Manifest.lock */,
 				AC166E2A2BFEE5D700700EE4 /* Sources */,
 				AC166E2B2BFEE5D700700EE4 /* Frameworks */,
 				AC166E2C2BFEE5D700700EE4 /* Resources */,
@@ -125,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC166E6C2BFF095300700EE4 /* Launch Screen.storyboard in Resources */,
 				AC166E392BFEE5D900700EE4 /* Preview Assets.xcassets in Resources */,
 				AC166E362BFEE5D900700EE4 /* Assets.xcassets in Resources */,
 			);
@@ -132,13 +305,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFBBC71E39E3CC83A2418029 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SIPProsper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC166E2A2BFEE5D700700EE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC166E622BFEF1D600700EE4 /* SettingsView.swift in Sources */,
+				AC166E512BFEEA5B00700EE4 /* HomeView.swift in Sources */,
+				AC166E562BFEEC2C00700EE4 /* LumpSumResultView.swift in Sources */,
+				AC166E5B2BFEECA400700EE4 /* PieChartView.swift in Sources */,
+				AC166E4C2BFEE6AA00700EE4 /* InvestmentChartView.swift in Sources */,
+				AC166E592BFEEC9300700EE4 /* PieSlice.swift in Sources */,
+				AC166E532BFEEAB500700EE4 /* LumpSumCalculatorView.swift in Sources */,
+				AC166E6A2BFF057900700EE4 /* App+Ext.swift in Sources */,
+				AC166E672BFF026300700EE4 /* WelcomeView.swift in Sources */,
+				AC166E4A2BFEE68D00700EE4 /* BarView.swift in Sources */,
+				AC166E5F2BFEF1B800700EE4 /* AppTheme.swift in Sources */,
 				AC166E342BFEE5D700700EE4 /* ContentView.swift in Sources */,
+				AC166E442BFEE64D00700EE4 /* LoadingView.swift in Sources */,
+				AC166E412BFEE62700700EE4 /* SIPCalculatorView.swift in Sources */,
+				AC166E642BFEF2F000700EE4 /* ImagePickerView.swift in Sources */,
 				AC166E322BFEE5D700700EE4 /* SIPProsperApp.swift in Sources */,
+				AC166E472BFEE66D00700EE4 /* InvestmentData.swift in Sources */,
+				AC166E4E2BFEE96700700EE4 /* HowSIPWorkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +480,7 @@
 		};
 		AC166E3D2BFEE5D900700EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A104A7D69D4A6642D0EA3B /* Pods-SIPProsper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,11 +489,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SIPProsper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to add Photo images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,14 +504,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIPProsper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AC166E3E2BFEE5D900700EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBF37F48EF9015D41A4DE63 /* Pods-SIPProsper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,11 +524,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SIPProsper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to add Photo images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +539,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIPProsper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

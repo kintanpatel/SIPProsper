@@ -1,0 +1,6 @@
+framework module Pods_SIPProsper {
+  umbrella header "Pods-SIPProsper-umbrella.h"
+
+  export *
+  module * { export * }
+}
