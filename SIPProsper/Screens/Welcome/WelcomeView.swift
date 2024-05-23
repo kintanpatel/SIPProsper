@@ -33,7 +33,11 @@ struct WelcomeScreenContentView: View {
    
     var body: some View {
         if(openHomeView){
-            HomeView()
+            if #available(iOS 14.0, *) {
+                HomeView()
+            } else {
+                Text("Welcome")
+            }
         }else{
             ZStack {
                 Image("calc")

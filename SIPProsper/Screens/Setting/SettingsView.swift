@@ -7,7 +7,7 @@
 
 import SwiftUI
 import StoreKit
-
+@available(iOS 14.0, *)
 struct SettingsView: View {
     @AppStorage("firstName") private var firstName: String = ""
     @AppStorage("lastName") private var lastName: String = ""
@@ -129,7 +129,7 @@ struct SettingsView: View {
         }
     }
 }
-
+@available(iOS 14.0, *)
 #Preview {
     SettingsView()
 }

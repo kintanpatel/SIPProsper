@@ -4,11 +4,10 @@
 //
 //  Created by kintan on 23/05/24.
 //
+ 
 
 import SwiftUI
-
-import SwiftUI
-
+@available(iOS 14.0, *)
 struct HowSIPWorkView: View {
     var body: some View {
         ScrollView {
@@ -49,7 +48,7 @@ The rate of interest on a SIP will differ as per market conditions. It may incre
     }
 }
 
- 
+@available(iOS 14.0, *)
 #Preview {
     HowSIPWorkView()
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+@available(iOS 14.0, *)
 struct LumpSumCalculatorView: View {
     @State private var principalAmount: String = ""
     @State private var annualInterestRate: String = ""
@@ -86,7 +86,7 @@ struct LumpSumCalculatorView: View {
         }
     }
 }
-
+@available(iOS 14.0, *)
 #Preview {
     NavigationView{
         LumpSumCalculatorView()

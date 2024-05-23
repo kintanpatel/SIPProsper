@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+@available(iOS 14.0, *)
 struct HomeView: View {
     @AppStorage("appTheme") private var appTheme: AppTheme = .system
     
@@ -40,6 +40,7 @@ struct HomeView: View {
         }
     }
 }
+@available(iOS 14.0, *)
 #Preview {
     HomeView()
 }

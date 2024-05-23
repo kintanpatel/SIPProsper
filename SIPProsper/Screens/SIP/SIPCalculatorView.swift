@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+@available(iOS 14.0, *)
 struct SIPCalculatorView: View {
     @State private var monthlyInvestment: String = ""
     @State private var annualInterestRate: String = ""
@@ -107,7 +107,7 @@ struct SIPCalculatorView: View {
     }
 }
 
-
+@available(iOS 14.0, *)
 #Preview {
     SIPCalculatorView()
 }

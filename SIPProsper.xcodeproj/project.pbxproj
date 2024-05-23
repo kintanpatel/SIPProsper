@@ -29,6 +29,7 @@
 		AC166E672BFF026300700EE4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E662BFF026300700EE4 /* WelcomeView.swift */; };
 		AC166E6A2BFF057900700EE4 /* App+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E692BFF057900700EE4 /* App+Ext.swift */; };
 		AC166E6C2BFF095300700EE4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */; };
+		AC166E6F2BFF0AED00700EE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC166E6E2BFF0AED00700EE4 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		AC166E662BFF026300700EE4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		AC166E692BFF057900700EE4 /* App+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Ext.swift"; sourceTree = "<group>"; };
 		AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Ext/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AC166E6D2BFF0ACF00700EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC166E6E2BFF0AED00700EE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CFBF37F48EF9015D41A4DE63 /* Pods-SIPProsper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPProsper.release.xcconfig"; path = "Target Support Files/Pods-SIPProsper/Pods-SIPProsper.release.xcconfig"; sourceTree = "<group>"; };
 		E2725EBB309C477403E8BAD1 /* Pods_SIPProsper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIPProsper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +112,7 @@
 		AC166E302BFEE5D700700EE4 /* SIPProsper */ = {
 			isa = PBXGroup;
 			children = (
+				AC166E6D2BFF0ACF00700EE4 /* Info.plist */,
 				AC166E6B2BFF095300700EE4 /* Launch Screen.storyboard */,
 				AC166E682BFF057000700EE4 /* Ext */,
 				AC166E5D2BFEF1B000700EE4 /* Enum */,
@@ -119,6 +123,7 @@
 				AC166E332BFEE5D700700EE4 /* ContentView.swift */,
 				AC166E352BFEE5D900700EE4 /* Assets.xcassets */,
 				AC166E372BFEE5D900700EE4 /* Preview Content */,
+				AC166E6E2BFF0AED00700EE4 /* SceneDelegate.swift */,
 			);
 			path = SIPProsper;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				AC166E412BFEE62700700EE4 /* SIPCalculatorView.swift in Sources */,
 				AC166E642BFEF2F000700EE4 /* ImagePickerView.swift in Sources */,
 				AC166E322BFEE5D700700EE4 /* SIPProsperApp.swift in Sources */,
+				AC166E6F2BFF0AED00700EE4 /* SceneDelegate.swift in Sources */,
 				AC166E472BFEE66D00700EE4 /* InvestmentData.swift in Sources */,
 				AC166E4E2BFEE96700700EE4 /* HowSIPWorkView.swift in Sources */,
 			);
@@ -488,15 +494,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SIPProsper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SIPProsper/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to add Photo images.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,15 +529,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SIPProsper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SIPProsper/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app uses your photo library to add Photo images.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

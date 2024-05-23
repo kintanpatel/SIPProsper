@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+@available(iOS 14.0, *)
 struct LumpSumResultView: View {
     var principalAmount: Double
     var maturityAmount: Double
@@ -35,13 +35,8 @@ struct LumpSumResultView: View {
         .navigationTitle("Investment Summary")
     }
 }
-
-struct LumpSumResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        LumpSumResultView(principalAmount: 1000, maturityAmount: 1200, interestEarned: 200)
-    }
-}
-
+ 
+@available(iOS 14.0, *)
 #Preview {
     LumpSumResultView(principalAmount: 1000, maturityAmount: 1200, interestEarned: 200)
 
