@@ -7,6 +7,8 @@
 
 import SwiftUI
 import StoreKit
+import Photos
+
 @available(iOS 14.0, *)
 struct SettingsView: View {
     @AppStorage("firstName") private var firstName: String = ""
@@ -15,8 +17,9 @@ struct SettingsView: View {
     @AppStorage("appTheme") private var appTheme: AppTheme = .system
     
     @State var showImagePicker: Bool = false
+    @State var showHelp: Bool = false
     @AppStorage("profileImage") private var profileImageData: Data?
-    
+    @State private var permissionStatus: PHAuthorizationStatus = .notDetermined
     
     var body: some View {
         Form {
@@ -36,7 +39,12 @@ struct SettingsView: View {
                     }
                     
                     Button("Edit Photo", action: {
-                        showImagePicker = true
+                        // Action to open image picker
+                        if (permissionStatus != .authorized){
+                            requestPermission()
+                            return
+                        }
+                    showImagePicker = true
                     })
                     Spacer()
                 }
@@ -78,14 +86,30 @@ struct SettingsView: View {
                         Text("Share This App")
                     }
                 }
+                Button(action: {
+                    showHelp = true
+                }) {
+                    HStack {
+                        Image(systemName: "questionmark.circle")
+                            .foregroundColor(.blue)
+                        Text("How it work")
+                    }
+                }
             }
             
         }
         .navigationTitle("Settings")
+        .onChange(of: permissionStatus, perform: { newValue in
+            if (permissionStatus == .authorized){
+                showImagePicker = true
+            }
+        })
         .sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .photoLibrary) { image in
                 profileImageData = image.pngData()
             }
+        }.sheet(isPresented: $showHelp) {
+            HowSIPWorkView()
         }
         .onAppear {
             applyTheme(appTheme)
@@ -94,22 +118,23 @@ struct SettingsView: View {
             applyTheme(newTheme)
         }
     }
-    func rateApp() {
-        if #available(iOS 14.0, *) {
-            // Prompt the user to rate the app (iOS 14.0 and later)
-            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-                SKStoreReviewController.requestReview(in: scene)
+    private func requestPermission() {
+        PHPhotoLibrary.requestAuthorization { status in
+            DispatchQueue.main.async {
+                self.permissionStatus = status
             }
-        } else {
-            // Fallback for earlier iOS versions (redirect to App Store)
-            guard let appStoreURL = URL(string: "https://apps.apple.com/app/your-app-id") else { return }
-            UIApplication.shared.open(appStoreURL, options: [:], completionHandler: nil)
+        }
+    }
+    func rateApp() {
+        // Prompt the user to rate the app (iOS 14.0 and later)
+        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
         }
     }
     
     private func shareApp() {
         // Create a URL for your app (e.g., App Store link)
-        guard let appURL = URL(string: "https://yourappstorelink.com") else { return }
+        guard let appURL = URL(string: "https://apps.apple.com/us/app/calculator/id1069511488") else { return }
         
         // Create a share sheet
         let activityViewController = UIActivityViewController(activityItems: [appURL], applicationActivities: nil)

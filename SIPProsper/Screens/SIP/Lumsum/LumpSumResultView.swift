@@ -14,9 +14,7 @@ struct LumpSumResultView: View {
 
     var body: some View {
         VStack {
-            Text("LumpSum Investment Result")
-                .font(.title)
-                .padding()
+           
 
             Text(String(format: "Principal Amount: ₹ %.2f", principalAmount))
                 .font(.headline)
@@ -31,6 +29,7 @@ struct LumpSumResultView: View {
             ])
             .frame(height: 300)
             .padding()
+            
         }
         .navigationTitle("Investment Summary")
     }

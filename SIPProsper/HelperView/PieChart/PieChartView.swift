@@ -22,20 +22,8 @@ struct PieChartView: View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
             let radius = size / 2
-            let center = CGPoint(x: radius, y: radius)
             
-            ZStack {
-                ForEach(0..<data.count) { index in
-                    let startAngle = index == 0 ? .degrees(0) : angle(for: data[0..<index].map { $0.value }.reduce(0, +))
-                    let endAngle = startAngle + angle(for: data[index].value)
-                    
-                    PieSlice(startAngle: startAngle, endAngle: endAngle)
-                        .fill(data[index].color)
-                }
-            }
-            .frame(width: size, height: size)
-            
-            VStack {
+            VStack(alignment : .center) {
                 ForEach(data, id: \.label) { segment in
                     HStack {
                         Text(segment.label)
@@ -46,6 +34,16 @@ struct PieChartView: View {
                     }
                     .padding(.horizontal)
                 }
+                ZStack {
+                    ForEach(0..<data.count, id : \.self) { index in
+                        let startAngle = index == 0 ? .degrees(0) : angle(for: data[0..<index].map { $0.value }.reduce(0, +))
+                        let endAngle = startAngle + angle(for: data[index].value)
+                        
+                        PieSlice(startAngle: startAngle, endAngle: endAngle)
+                            .fill(data[index].color)
+                    }
+                }
+                .frame(width: size, height: size)
             }
         }
     }
